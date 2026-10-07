@@ -1,0 +1,1538 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <!-- SEO Meta Tags -->
+    <title>Software Engineer | Portfolio</title>
+    <meta name="description" content="Personal portfolio website of a software engineer showcasing technical skills, projects, experience timeline, and achievements.">
+    <meta name="keywords" content="Software Engineer, Portfolio, Web Developer, Projects, Resume, Computer Science">
+    <meta name="author" content="Software Engineer">
+    
+    <!-- Open Graph / Social Sharing Meta Tags -->
+    <meta property="og:title" content="Software Engineer Portfolio">
+    <meta property="og:description" content="Explore my software engineering projects, technical skills, and development journey.">
+    <meta property="og:type" content="website">
+    
+    <!-- Google Fonts: Pixel Fonts (Press Start 2P, Silkscreen, VT323) + Plus Jakarta Sans & JetBrains Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Silkscreen:wght@400;700&family=VT323&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Skip to main content link for Accessibility (a11y) -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- ========================================================= -->
+    <!-- MOBILE TOPBAR (Visible on small screens) -->
+    <!-- ========================================================= -->
+    <header class="mobile-topbar" id="mobile-topbar">
+        <a href="#hero" class="mobile-brand pixel-brand" aria-label="Home">
+            <span class="pixel-logo-icon">&#9650;</span>
+            <span class="logo-text">MEENAKSHI.EXE</span>
+        </a>
+        <div class="mobile-topbar-actions">
+            <button id="mobile-theme-toggle" class="pixel-theme-btn-compact" aria-label="Toggle night mode" title="Toggle theme">
+                <span id="mobile-theme-icon">&#9789;</span>
+            </button>
+            <button id="sidebar-toggle-btn" class="mobile-menu-btn pixel-hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="sidebar">
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-text">MENU</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Drawer Backdrop Overlay -->
+    <div class="sidebar-backdrop" id="sidebar-backdrop" aria-hidden="true"></div>
+
+    <!-- ========================================================= -->
+    <!-- VERTICAL NAVIGATION BAR (Left Side of Screen) -->
+    <!-- ========================================================= -->
+    <aside class="pixel-vertical-navbar" id="sidebar" role="navigation" aria-label="Vertical Navigation">
+        <!-- Close button for mobile drawer -->
+        <button id="sidebar-close-btn" class="sidebar-close-btn" aria-label="Close navigation menu">
+            [ X ]
+        </button>
+
+        <!-- Sidebar Brand & Player Status -->
+        <div class="sidebar-header">
+            <a href="#hero" class="sidebar-brand pixel-brand" aria-label="Home">
+                <span class="pixel-logo-icon">&#9650;</span>
+                <span class="logo-text">MEENAKSHI.EXE</span>
+            </a>
+            <div class="sidebar-version-tag">SYSTEM v2.026</div>
+            <div class="sidebar-player-status">
+                <span class="pixel-status-pulse"></span>
+                <span class="status-label">STATUS: ONLINE</span>
+            </div>
+        </div>
+
+        <!-- Vertical Navigation Links -->
+        <nav class="sidebar-nav" aria-label="Main Navigation">
+            <ul class="sidebar-nav-list" role="list">
+                <li class="sidebar-nav-item">
+                    <a href="#hero" class="sidebar-nav-link active" data-section="hero" aria-current="page">
+                        <span class="pixel-cursor-indicator" aria-hidden="true">&#9654;</span>
+                        <span class="nav-glyph" aria-hidden="true">&#9055;</span>
+                        <span class="nav-text">Home</span>
+                    </a>
+                </li>
+                <li class="sidebar-nav-item">
+                    <a href="#about" class="sidebar-nav-link" data-section="about">
+                        <span class="pixel-cursor-indicator" aria-hidden="true">&#9654;</span>
+                        <span class="nav-glyph" aria-hidden="true">&#9786;</span>
+                        <span class="nav-text">About Me</span>
+                    </a>
+                </li>
+                <li class="sidebar-nav-item">
+                    <a href="#skills" class="sidebar-nav-link" data-section="skills">
+                        <span class="pixel-cursor-indicator" aria-hidden="true">&#9654;</span>
+                        <span class="nav-glyph" aria-hidden="true">&#9889;</span>
+                        <span class="nav-text">Skills</span>
+                    </a>
+                </li>
+                <li class="sidebar-nav-item">
+                    <a href="#timeline" class="sidebar-nav-link" data-section="timeline">
+                        <span class="pixel-cursor-indicator" aria-hidden="true">&#9654;</span>
+                        <span class="nav-glyph" aria-hidden="true">&#8987;</span>
+                        <span class="nav-text">Timeline</span>
+                    </a>
+                </li>
+                <li class="sidebar-nav-item">
+                    <a href="#projects" class="sidebar-nav-link" data-section="projects">
+                        <span class="pixel-cursor-indicator" aria-hidden="true">&#9654;</span>
+                        <span class="nav-glyph" aria-hidden="true">&#9876;</span>
+                        <span class="nav-text">Projects</span>
+                    </a>
+                </li>
+                <li class="sidebar-nav-item">
+                    <a href="#chat" class="sidebar-nav-link" data-section="chat">
+                        <span class="pixel-cursor-indicator" aria-hidden="true">&#9654;</span>
+                        <span class="nav-glyph" aria-hidden="true">&#128172;</span>
+                        <span class="nav-text">Chat</span>
+                    </a>
+                </li>
+                <li class="sidebar-nav-item">
+                    <a href="#contact" class="sidebar-nav-link" data-section="contact">
+                        <span class="pixel-cursor-indicator" aria-hidden="true">&#9654;</span>
+                        <span class="nav-glyph" aria-hidden="true">&#9993;</span>
+                        <span class="nav-text">Contact</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Sidebar Footer: Night Mode Toggle & Copyright -->
+        <div class="sidebar-footer">
+            <button id="theme-toggle" class="pixel-theme-btn sidebar-theme-btn" aria-label="Toggle night mode" title="Toggle theme (Auto-detected from browser via CSS Media Queries)">
+                <span class="theme-btn-icon" id="theme-btn-icon">&#9789;</span>
+                <span class="theme-btn-label" id="theme-btn-label">NIGHT MODE</span>
+            </button>
+            <div class="sidebar-footer-info">
+                <span class="sidebar-shortcut-tag">[ALT+T] THEME</span>
+                <span class="sidebar-copyright">&copy; 2026 MEENAKSHI</span>
+            </div>
+        </div>
+    </aside>
+
+    <!-- ========================================================= -->
+    <!-- MAIN CONTENT -->
+    <!-- ========================================================= -->
+    <main id="main-content">
+
+        <!-- ===================================================== -->
+        <!-- PIXEL ART HERO SECTION -->
+        <!-- ===================================================== -->
+        <section class="section hero-section pixel-hero" id="hero">
+            <!-- Pixel Grid & CRT Scanline Overlays -->
+            <div class="pixel-crt-overlay" aria-hidden="true"></div>
+            <div class="pixel-dither-pattern" aria-hidden="true"></div>
+
+            <div class="container hero-container pixel-hero-container">
+                <!-- Left Column: Pixel Greeting, Title, Tagline, RPG Dialogue & CTA -->
+                <div class="hero-content pixel-hero-content">
+                    <div class="pixel-status-bar">
+                        <span class="pixel-blinking-star">&#9733;</span>
+                        <span class="pixel-status-text">PLAYER 1 READY &bull; CS &amp; DATA SCIENCE</span>
+                        <span class="pixel-score-tag">SCORE: 8.3 CGPA</span>
+                    </div>
+
+                    <!-- Welcome Title -->
+                    <h1 class="pixel-hero-title">
+                        WELCOME TRAVELER!<br>
+                        I'M <span class="pixel-gradient-name">MEENAKSHI E</span>
+                    </h1>
+
+                    <!-- Brief Tagline -->
+                    <p class="pixel-hero-tagline">
+                        <span class="pixel-prompt-symbol">&gt;&gt;</span> Software Engineer &bull; Algorithm Craftsman &bull; Hardware Builder
+                    </p>
+
+                    <!-- Pixel RPG Dialogue Box -->
+                    <div class="pixel-dialogue-box">
+                        <div class="dialogue-header">
+                            <span class="dialogue-speaker">&#9876; NPC MEENAKSHI SAYS:</span>
+                            <span class="dialogue-level">LVL. 2026</span>
+                        </div>
+                        <p class="dialogue-body">
+                            "Greetings! Welcome to my engineering sanctuary. I craft responsive full-stack applications, program microcontrollers for smart devices, and explore modern Data Science &amp; Generative AI. Choose your quest below!"
+                        </p>
+                        <div class="dialogue-footer">
+                            <span class="dialogue-instruction">PRESS START TO PROCEED</span>
+                            <span class="pixel-cursor">&#9660;</span>
+                        </div>
+                    </div>
+
+                    <!-- Pixel Call-To-Action Buttons -->
+                    <div class="pixel-btn-group">
+                        <a href="#projects" class="pixel-btn pixel-btn-primary" id="hero-btn-projects">
+                            <span class="btn-pixel-icon">&#9654;</span> [ VIEW PROJECTS ]
+                        </a>
+                        <a href="#contact" class="pixel-btn pixel-btn-secondary" id="hero-btn-contact">
+                            <span class="btn-pixel-icon">&#9993;</span> [ GET IN TOUCH ]
+                        </a>
+                        <a href="Meenakshi_resume (1).pdf" target="_blank" rel="noopener noreferrer" class="pixel-btn pixel-btn-accent" id="hero-btn-resume">
+                            <span class="btn-pixel-icon">&#128196;</span> [ RESUME.PDF ]
+                        </a>
+                    </div>
+
+                    <!-- Pixel Social / Link Icons -->
+                    <div class="pixel-social-tray">
+                        <span class="social-tray-label">CONNECT:</span>
+                        <a href="https://github.com/17meenakshi28E" target="_blank" rel="noopener noreferrer" class="pixel-social-link" aria-label="GitHub Profile">
+                            <span class="pixel-link-badge">GIT</span>
+                        </a>
+                        <a href="https://linkedin.com/in/meenakshi-e-805b55392" target="_blank" rel="noopener noreferrer" class="pixel-social-link" aria-label="LinkedIn Profile">
+                            <span class="pixel-link-badge">IN</span>
+                        </a>
+                        <a href="mailto:17meenakshi28@gmail.com" class="pixel-social-link" aria-label="Email Me">
+                            <span class="pixel-link-badge">MAIL</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Column: Retro Pixel Character Sheet & Avatar Frame -->
+                <div class="pixel-character-column">
+                    <div class="pixel-window-card">
+                        <!-- Pixel Card Header Bar -->
+                        <div class="pixel-card-titlebar">
+                            <div class="pixel-card-controls">
+                                <span class="pixel-dot dot-red"></span>
+                                <span class="pixel-dot dot-yellow"></span>
+                                <span class="pixel-dot dot-green"></span>
+                            </div>
+                            <span class="pixel-card-caption">PLAYER_PROFILE.DAT</span>
+                        </div>
+
+                        <!-- Pixel Avatar Frame with User's Photo -->
+                        <div class="pixel-avatar-frame">
+                            <div class="pixel-avatar-inner">
+                                <img src="profile.jpeg" alt="Meenakshi E - Software Engineer" class="pixel-avatar-photo">
+                                <div class="pixel-avatar-scanlines" aria-hidden="true"></div>
+                                <div class="pixel-corner-deco corner-tl"></div>
+                                <div class="pixel-corner-deco corner-tr"></div>
+                                <div class="pixel-corner-deco corner-bl"></div>
+                                <div class="pixel-corner-deco corner-br"></div>
+                            </div>
+                            <div class="pixel-badge-online">
+                                <span class="pixel-blink-dot"></span> STATUS: ONLINE
+                            </div>
+                        </div>
+
+                        <!-- Pixel RPG Stats & Vitals -->
+                        <div class="pixel-stats-body">
+                            <div class="pixel-stat-row">
+                                <span class="stat-tag">CLASS:</span>
+                                <span class="stat-data">Software Engineer</span>
+                            </div>
+                            <div class="pixel-stat-row">
+                                <span class="stat-tag">BRANCH:</span>
+                                <span class="stat-data">CS &amp; Data Science</span>
+                            </div>
+                            
+                            <!-- HP Bar (Health/Stamina) -->
+                            <div class="pixel-meter-row">
+                                <div class="meter-info">
+                                    <span class="meter-name">HP [CODE ENERGY]</span>
+                                    <span class="meter-val">100 / 100</span>
+                                </div>
+                                <div class="pixel-meter-track">
+                                    <div class="pixel-meter-fill fill-hp"></div>
+                                </div>
+                            </div>
+
+                            <!-- MP Bar (Algorithm Power) -->
+                            <div class="pixel-meter-row">
+                                <div class="meter-info">
+                                    <span class="meter-name">MP [PROBLEM SOLVING]</span>
+                                    <span class="meter-val">95 / 100</span>
+                                </div>
+                                <div class="pixel-meter-track">
+                                    <div class="pixel-meter-fill fill-mp"></div>
+                                </div>
+                            </div>
+
+                            <!-- Pixel Skills Badges -->
+                            <div class="pixel-skill-pills">
+                                <span class="pixel-pill pill-python">PYTHON</span>
+                                <span class="pixel-pill pill-java">JAVA</span>
+                                <span class="pixel-pill pill-iot">IoT/ARDUINO</span>
+                                <span class="pixel-pill pill-web">WEB DEV</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- ABOUT SECTION PLACEHOLDER -->
+        <!-- ===================================================== -->
+        <!-- 
+            ABOUT SECTION:
+            - Background story, education highlights, and core philosophy
+            - Quick stats / highlights cards
+        -->
+        <!-- ===================================================== -->
+        <!-- ABOUT ME SECTION -->
+        <!-- ===================================================== -->
+        <section class="section about-section pixel-about-section" id="about">
+            <div class="container">
+                <header class="section-header">
+                    <span class="section-tag">// 01. PROFILE BRIEF</span>
+                    <h2 class="section-title">About Me</h2>
+                    <p class="section-description">A look into my engineering background, technical milestones, and personal passions.</p>
+                </header>
+
+                <div class="about-minimal-wrapper">
+                    <!-- Left Column: Profile Card with Pixel-Art Avatar -->
+                    <div class="about-profile-card">
+                        <div class="avatar-pixel-frame">
+                            <img src="pixel_avatar.jpg" alt="Meenakshi E - Pixel Art Avatar" class="about-avatar-img" id="about-avatar">
+                            <div class="avatar-corner-decor tl"></div>
+                            <div class="avatar-corner-decor tr"></div>
+                            <div class="avatar-corner-decor bl"></div>
+                            <div class="avatar-corner-decor br"></div>
+                        </div>
+                        <div class="profile-card-details">
+                            <h3 class="profile-name">Meenakshi E</h3>
+                            <p class="profile-role">Software Engineer &amp; Data Scientist</p>
+                            <div class="profile-location">
+                                <span class="pixel-pin">&#9670;</span> Karnataka, India
+                            </div>
+                            <div class="profile-status-pill">
+                                <span class="pulse-indicator"></span> Open to Opportunities
+                            </div>
+                        </div>
+
+                        <!-- Minimalist Quick Metric Bar -->
+                        <div class="profile-stat-bar">
+                            <div class="mini-stat">
+                                <span class="mini-stat-val">8.3</span>
+                                <span class="mini-stat-lbl">CGPA</span>
+                            </div>
+                            <div class="mini-stat-divider" aria-hidden="true"></div>
+                            <div class="mini-stat">
+                                <span class="mini-stat-val">5+</span>
+                                <span class="mini-stat-lbl">Projects</span>
+                            </div>
+                            <div class="mini-stat-divider" aria-hidden="true"></div>
+                            <div class="mini-stat">
+                                <span class="mini-stat-val">2026</span>
+                                <span class="mini-stat-lbl">Class Of</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Bio, Highlights, and Personal Interests -->
+                    <div class="about-content-card">
+                        <!-- Short Bio -->
+                        <div class="about-bio-block">
+                            <h3 class="about-subheading">
+                                <span class="subheading-accent">&#9654;</span> Engineering Mindset &amp; Bio
+                            </h3>
+                            <p class="about-paragraph lead-bio">
+                                Hi, I’m <strong>Meenakshi</strong> — a Computer Science and Data Science engineering student passionate about creating dependable software, elegant digital architectures, and smart IoT solutions.
+                            </p>
+                            <p class="about-paragraph">
+                                I love turning abstract problems into robust, working applications. Whether writing object-oriented Python, querying relational data, designing semantic web interfaces, or interfacing embedded hardware, I focus on clean maintainable code, algorithmic efficiency, and user empathy.
+                            </p>
+                        </div>
+
+                        <!-- Career Highlights -->
+                        <div class="about-highlights-block">
+                            <h3 class="about-subheading">
+                                <span class="subheading-accent">&#9654;</span> Career &amp; Academic Highlights
+                            </h3>
+                            <ul class="highlights-list" role="list">
+                                <li class="highlight-item">
+                                    <span class="highlight-bullet">&#9670;</span>
+                                    <div>
+                                        <strong>Academic Distinction:</strong> Maintained an outstanding <strong>8.3 CGPA</strong> in B.E. Computer Science &amp; Data Science at Adichunchanagiri Institute of Technology.
+                                    </div>
+                                </li>
+                                <li class="highlight-item">
+                                    <span class="highlight-bullet">&#9670;</span>
+                                    <div>
+                                        <strong>IoT Embedded Prototyping:</strong> Engineered a Women Safety Device integrating Arduino UNO, GPS geolocation tracking, and GSM emergency alerting.
+                                    </div>
+                                </li>
+                                <li class="highlight-item">
+                                    <span class="highlight-bullet">&#9670;</span>
+                                    <div>
+                                        <strong>Systems Engineering:</strong> Researched and built a water-based power generation system analyzing mechanical-to-electrical kinetic conversion.
+                                    </div>
+                                </li>
+                                <li class="highlight-item">
+                                    <span class="highlight-bullet">&#9670;</span>
+                                    <div>
+                                        <strong>Continuous Specialization:</strong> Completed professional coursework in <em>Generative AI</em> fundamentals and <em>Power BI</em> business analytics.
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Personal Interests -->
+                        <div class="about-interests-block">
+                            <h3 class="about-subheading">
+                                <span class="subheading-accent">&#9654;</span> Personal Interests &amp; Passions
+                            </h3>
+                            <div class="interests-grid">
+                                <div class="interest-pill">
+                                    <span class="interest-icon">&#128187;</span>
+                                    <div class="interest-text">
+                                        <strong>Algorithmic Puzzles</strong>
+                                        <span>Data structures &amp; logic problems</span>
+                                    </div>
+                                </div>
+                                <div class="interest-pill">
+                                    <span class="interest-icon">&#128377;</span>
+                                    <div class="interest-text">
+                                        <strong>Retro &amp; Pixel Games</strong>
+                                        <span>Classic arcade design &amp; RPGs</span>
+                                    </div>
+                                </div>
+                                <div class="interest-pill">
+                                    <span class="interest-icon">&#9881;</span>
+                                    <div class="interest-text">
+                                        <strong>Hardware Tinkering</strong>
+                                        <span>Arduino sensors &amp; microcontroller circuits</span>
+                                    </div>
+                                </div>
+                                <div class="interest-pill">
+                                    <span class="interest-icon">&#129302;</span>
+                                    <div class="interest-text">
+                                        <strong>GenAI &amp; Data</strong>
+                                        <span>LLMs, prompt engineering &amp; analytics</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Action Buttons -->
+                        <div class="about-cta-footer">
+                            <a href="Meenakshi_resume (1).pdf" target="_blank" rel="noopener noreferrer" class="pixel-btn pixel-btn-primary">
+                                <span class="btn-pixel-icon">&#128196;</span> DOWNLOAD RESUME
+                            </a>
+                            <a href="#contact" class="pixel-btn pixel-btn-secondary">
+                                <span class="btn-pixel-icon">&#9993;</span> GET IN TOUCH
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- SKILLS & TECHNICAL ARSENAL SECTION -->
+        <!-- ===================================================== -->
+        <section class="section skills-section pixel-skills-section" id="skills">
+            <div class="container">
+                <header class="section-header">
+                    <span class="section-tag">// 02. TECHNICAL ARSENAL</span>
+                    <h2 class="section-title">Skills &amp; Mastery</h2>
+                    <p class="section-description">Core technical competencies, language proficiencies, and hardware/software mastery levels.</p>
+                </header>
+
+                <!-- Interactive Pixel Filter Tabs -->
+                <div class="pixel-skill-tabs" role="tablist" aria-label="Skill category filter tabs">
+                    <button class="pixel-tab-btn active" data-filter="all" role="tab" aria-selected="true">
+                        <span class="tab-cursor">&#9654;</span> ALL ARSENAL
+                    </button>
+                    <button class="pixel-tab-btn" data-filter="languages" role="tab" aria-selected="false">
+                        <span class="tab-cursor">&#9654;</span> LANGUAGES
+                    </button>
+                    <button class="pixel-tab-btn" data-filter="frontend" role="tab" aria-selected="false">
+                        <span class="tab-cursor">&#9654;</span> WEB &amp; FRONTEND
+                    </button>
+                    <button class="pixel-tab-btn" data-filter="data" role="tab" aria-selected="false">
+                        <span class="tab-cursor">&#9654;</span> CORE CS &amp; DATA
+                    </button>
+                    <button class="pixel-tab-btn" data-filter="hardware" role="tab" aria-selected="false">
+                        <span class="tab-cursor">&#9654;</span> IoT &amp; TOOLS
+                    </button>
+                </div>
+
+                <!-- Skills Cartridges Grid -->
+                <div class="skills-grid pixel-skills-grid">
+
+                    <!-- ===================================================== -->
+                    <!-- CARTRIDGE 01: PROGRAMMING LANGUAGES -->
+                    <!-- Represents primary logic formulation, OOP architectures, and algorithm implementation -->
+                    <!-- ===================================================== -->
+                    <article class="pixel-skill-cartridge" data-category="languages">
+                        <div class="cartridge-header">
+                            <div class="cartridge-badge">ROM-01</div>
+                            <h3 class="cartridge-title">
+                                <span class="cartridge-icon">&#9000;</span> Programming Languages
+                            </h3>
+                            <span class="cartridge-count">4 MODULES</span>
+                        </div>
+                        <p class="cartridge-summary">Foundational syntax and logic engines for problem solving, backend systems, and scripting.</p>
+
+                        <div class="skills-meter-list">
+                            <!-- Python Skill Item: Represents data science workflows, automation scripting, and AI models -->
+                            <div class="skill-meter-item" tabindex="0" data-skill="Python" data-desc="Used for algorithm design, AI/Data Science exploration, and automation scripting.">
+                                <div class="skill-meter-head">
+                                    <div class="skill-name-wrap">
+                                        <span class="skill-glyph glyph-python">&#9670;</span>
+                                        <span class="skill-name">Python</span>
+                                    </div>
+                                    <span class="skill-level-tag">LVL 90 [ADVANCED]</span>
+                                </div>
+                                <div class="pixel-progress-bar" aria-label="Python proficiency 90 percent" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="pixel-progress-fill fill-python" style="--skill-pct: 90%;">
+                                        <span class="pixel-progress-segments"></span>
+                                    </div>
+                                </div>
+                                <div class="skill-capability-tags">
+                                    <span class="cap-tag">Object-Oriented</span>
+                                    <span class="cap-tag">Scripting &amp; Automation</span>
+                                    <span class="cap-tag">Data Handling</span>
+                                </div>
+                            </div>
+
+                            <!-- Java Skill Item: Represents robust object-oriented programming, data structures, and memory safety -->
+                            <div class="skill-meter-item" tabindex="0" data-skill="Java" data-desc="Employed for core object-oriented architectures, algorithmic problem solving, and backend services.">
+                                <div class="skill-meter-head">
+                                    <div class="skill-name-wrap">
+                                        <span class="skill-glyph glyph-java">&#9670;</span>
+                                        <span class="skill-name">Java</span>
+                                    </div>
+                                    <span class="skill-level-tag">LVL 85 [PROFICIENT]</span>
+                                </div>
+                                <div class="pixel-progress-bar" aria-label="Java proficiency 85 percent" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="pixel-progress-fill fill-java" style="--skill-pct: 85%;">
+                                        <span class="pixel-progress-segments"></span>
+                                    </div>
+                                </div>
+                                <div class="skill-capability-tags">
+                                    <span class="cap-tag">Core OOP</span>
+                                    <span class="cap-tag">Collections Framework</span>
+                                    <span class="cap-tag">Data Structures</span>
+                                </div>
+                            </div>
+
+                            <!-- C / C++ Skill Item: Represents low-level hardware memory management, pointers, and embedded firmware -->
+                            <div class="skill-meter-item" tabindex="0" data-skill="C / C++" data-desc="Applied in embedded system firmware, low-level microcontroller routines, and memory fundamentals.">
+                                <div class="skill-meter-head">
+                                    <div class="skill-name-wrap">
+                                        <span class="skill-glyph glyph-c">&#9670;</span>
+                                        <span class="skill-name">C / C++</span>
+                                    </div>
+                                    <span class="skill-level-tag">LVL 75 [COMPETENT]</span>
+                                </div>
+                                <div class="pixel-progress-bar" aria-label="C and C++ proficiency 75 percent" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="pixel-progress-fill fill-c" style="--skill-pct: 75%;">
+                                        <span class="pixel-progress-segments"></span>
+                                    </div>
+                                </div>
+                                <div class="skill-capability-tags">
+                                    <span class="cap-tag">Microcontroller Firmware</span>
+                                    <span class="cap-tag">Pointer Arithmetic</span>
+                                    <span class="cap-tag">Systems Logic</span>
+                                </div>
+                            </div>
+
+                            <!-- JavaScript Skill Item: Represents dynamic DOM scripting, asynchronous events, and interactive web behavior -->
+                            <div class="skill-meter-item" tabindex="0" data-skill="JavaScript" data-desc="Drives dynamic UI state management, asynchronous API fetch operations, and modular DOM logic.">
+                                <div class="skill-meter-head">
+                                    <div class="skill-name-wrap">
+                                        <span class="skill-glyph glyph-js">&#9670;</span>
+                                        <span class="skill-name">JavaScript (ES6+)</span>
+                                    </div>
+                                    <span class="skill-level-tag">LVL 82 [PROFICIENT]</span>
+                                </div>
+                                <div class="pixel-progress-bar" aria-label="JavaScript proficiency 82 percent" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="pixel-progress-fill fill-js" style="--skill-pct: 82%;">
+                                        <span class="pixel-progress-segments"></span>
+                                    </div>
+                                </div>
+                                <div class="skill-capability-tags">
+                                    <span class="cap-tag">Modern ES6+</span>
+                                    <span class="cap-tag">Async/Await &amp; Events</span>
+                                    <span class="cap-tag">State Manipulation</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- ===================================================== -->
+                    <!-- CARTRIDGE 02: WEB & FRONTEND TECHNOLOGIES -->
+                    <!-- Represents accessible UI markup, responsive style systems, and cross-browser rendering -->
+                    <!-- ===================================================== -->
+                    <article class="pixel-skill-cartridge" data-category="frontend">
+                        <div class="cartridge-header">
+                            <div class="cartridge-badge">ROM-02</div>
+                            <h3 class="cartridge-title">
+                                <span class="cartridge-icon">&#9638;</span> Web &amp; Frontend
+                            </h3>
+                            <span class="cartridge-count">4 MODULES</span>
+                        </div>
+                        <p class="cartridge-summary">Building high-performance, accessible web interfaces with clean layout semantics and micro-interactions.</p>
+
+                        <div class="skills-meter-list">
+                            <!-- Semantic HTML5 Skill Item: Represents accessible structural foundation, SEO best practices, and document semantics -->
+                            <div class="skill-meter-item" tabindex="0" data-skill="Semantic HTML5" data-desc="Guarantees WCAG a11y accessibility standards, SEO rank compliance, and semantic landmarks.">
+                                <div class="skill-meter-head">
+                                    <div class="skill-name-wrap">
+                                        <span class="skill-glyph glyph-html">&#9670;</span>
+                                        <span class="skill-name">Semantic HTML5</span>
+                                    </div>
+                                    <span class="skill-level-tag">LVL 95 [EXPERT]</span>
+                                </div>
+                                <div class="pixel-progress-bar" aria-label="Semantic HTML5 proficiency 95 percent" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="pixel-progress-fill fill-html" style="--skill-pct: 95%;">
+                                        <span class="pixel-progress-segments"></span>
+                                    </div>
+                                </div>
+                                <div class="skill-capability-tags">
+                                    <span class="cap-tag">Accessible Landmarks</span>
+                                    <span class="cap-tag">SEO Meta Hierarchy</span>
+                                    <span class="cap-tag">ARIA Roles</span>
+                                </div>
+                            </div>
+
+                            <!-- Modern CSS3 Skill Item: Represents layout engines, theme variables, glassmorphism, and responsive design -->
+                            <div class="skill-meter-item" tabindex="0" data-skill="Modern CSS3" data-desc="Implements flexible CSS Grid & Flexbox, custom CSS variables, and pixel art stepped borders.">
+                                <div class="skill-meter-head">
+                                    <div class="skill-name-wrap">
+                                        <span class="skill-glyph glyph-css">&#9670;</span>
+                                        <span class="skill-name">Modern CSS3</span>
+                                    </div>
+                                    <span class="skill-level-tag">LVL 90 [ADVANCED]</span>
+                                </div>
+                                <div class="pixel-progress-bar" aria-label="Modern CSS3 proficiency 90 percent" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="pixel-progress-fill fill-css" style="--skill-pct: 90%;">
+                                        <span class="pixel-progress-segments"></span>
+                                    </div>
+                                </div>
+                                <div class="skill-capability-tags">
+                                    <span class="cap-tag">CSS Grid &amp; Flexbox</span>
+                                    <span class="cap-tag">Dynamic Theme Tokens</span>
+                                    <span class="cap-tag">Pixel Stepped Shadows</span>
+                                </div>
+                            </div>
+
+                            <!-- Responsive Design Skill Item: Represents mobile-first layout fluidity across diverse viewport breakpoints -->
+                            <div class="skill-meter-item" tabindex="0" data-skill="Responsive Layouts" data-desc="Ensures flawless scaling and touch-friendly controls across mobile, tablet, and desktop screens.">
+                                <div class="skill-meter-head">
+                                    <div class="skill-name-wrap">
+                                        <span class="skill-glyph glyph-resp">&#9670;</span>
+                                        <span class="skill-name">Responsive Design</span>
+                                    </div>
+                                    <span class="skill-level-tag">LVL 92 [ADVANCED]</span>
+                                </div>
+                                <div class="pixel-progress-bar" aria-label="Responsive design proficiency 92 percent" role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="pixel-progress-fill fill-resp" style="--skill-pct: 92%;">
+                                        <span class="pixel-progress-segments"></span>
+                                    </div>
+                                </div>
+                                <div class="skill-capability-tags">
+                                    <span class="cap-tag">Mobile-First Queries</span>
+                                    <span class="cap-tag">Fluid Typography</span>
+                                    <span class="cap-tag">Touch Navigation</span>
+                                </div>
+                            </div>
+
+                            <!-- DOM Manipulation Skill Item: Represents lightweight client-side event binding and interactive UI animations -->
+                            <div class="skill-meter-item" tabindex="0" data-skill="DOM Engineering" data-desc="Controls reactive client state, drawer toggles, scrollspy navigation, and keyboard handlers.">
+                                <div class="skill-meter-head">
+                                    <div class="skill-name-wrap">
+                                        <span class="skill-glyph glyph-dom">&#9670;</span>
+                                        <span class="skill-name">DOM &amp; UI Engines</span>
+                                    </div>
+                                    <span class="skill-level-tag">LVL 85 [PROFICIENT]</span>
+                                </div>
+                                <div class="pixel-progress-bar" aria-label="DOM engineering proficiency 85 percent" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="pixel-progress-fill fill-dom" style="--skill-pct: 85%;">
+                                        <span class="pixel-progress-segments"></span>
+                                    </div>
+                                </div>
+                                <div class="skill-capability-tags">
+                                    <span class="cap-tag">Event Delegation</span>
+                                    <span class="cap-tag">Scroll Tracking</span>
+                                    <span class="cap-tag">Local Storage Sync</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- ===================================================== -->
+                    <!-- CARTRIDGE 03: CORE CS & DATA SYSTEMS -->
+                    <!-- Represents computer systems knowledge, data modeling, algorithms, and business intelligence -->
+                    <!-- ===================================================== -->
+                    <article class="pixel-skill-cartridge" data-category="data">
+                        <div class="cartridge-header">
+                            <div class="cartridge-badge">ROM-03</div>
+                            <h3 class="cartridge-title">
+                                <span class="cartridge-icon">&#9744;</span> Core CS &amp; Data
+                            </h3>
+                            <span class="cartridge-count">4 MODULES</span>
+                        </div>
+                        <p class="cartridge-summary">Computer systems architecture, algorithmic complexity, relational data handling, and analytics.</p>
+
+                        <div class="skills-meter-list">
+                            <!-- Operating Systems Skill Item: Represents processes, thread scheduling, memory virtualization, and file systems -->
+                            <div class="skill-meter-item" tabindex="0" data-skill="Operating Systems" data-desc="Covers process scheduling, concurrency, virtualization, memory segmentation, and Linux fundamentals.">
+                                <div class="skill-meter-head">
+                                    <div class="skill-name-wrap">
+                                        <span class="skill-glyph glyph-os">&#9670;</span>
+                                        <span class="skill-name">Operating Systems</span>
+                                    </div>
+                                    <span class="skill-level-tag">LVL 88 [PROFICIENT]</span>
+                                </div>
+                                <div class="pixel-progress-bar" aria-label="Operating systems proficiency 88 percent" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="pixel-progress-fill fill-os" style="--skill-pct: 88%;">
+                                        <span class="pixel-progress-segments"></span>
+                                    </div>
+                                </div>
+                                <div class="skill-capability-tags">
+                                    <span class="cap-tag">Concurrency &amp; Threads</span>
+                                    <span class="cap-tag">Memory Management</span>
+                                    <span class="cap-tag">Process Scheduling</span>
+                                </div>
+                            </div>
+
+                            <!-- Data Structures & Algorithms Skill Item: Represents computational complexity, trees, graphs, and search algorithms -->
+                            <div class="skill-meter-item" tabindex="0" data-skill="DSA" data-desc="Focuses on asymptotic time/space complexity optimization, recursion, graphs, and dynamic structures.">
+                                <div class="skill-meter-head">
+                                    <div class="skill-name-wrap">
+                                        <span class="skill-glyph glyph-dsa">&#9670;</span>
+                                        <span class="skill-name">Data Structures &amp; Algos</span>
+                                    </div>
+                                    <span class="skill-level-tag">LVL 85 [PROFICIENT]</span>
+                                </div>
+                                <div class="pixel-progress-bar" aria-label="Data structures and algorithms proficiency 85 percent" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="pixel-progress-fill fill-dsa" style="--skill-pct: 85%;">
+                                        <span class="pixel-progress-segments"></span>
+                                    </div>
+                                </div>
+                                <div class="skill-capability-tags">
+                                    <span class="cap-tag">Trees &amp; Graphs</span>
+                                    <span class="cap-tag">Sorting &amp; Searching</span>
+                                    <span class="cap-tag">Asymptotic Analysis</span>
+                                </div>
+                            </div>
+
+                            <!-- SQL & Databases Skill Item: Represents relational schema modeling, data queries, and ACID transactional integrity -->
+                            <div class="skill-meter-item" tabindex="0" data-skill="Relational Databases" data-desc="Handles normalized relational table design, multi-table joins, indexing, and data retrieval integrity.">
+                                <div class="skill-meter-head">
+                                    <div class="skill-name-wrap">
+                                        <span class="skill-glyph glyph-sql">&#9670;</span>
+                                        <span class="skill-name">SQL &amp; Relational DBs</span>
+                                    </div>
+                                    <span class="skill-level-tag">LVL 80 [COMPETENT]</span>
+                                </div>
+                                <div class="pixel-progress-bar" aria-label="SQL and databases proficiency 80 percent" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="pixel-progress-fill fill-sql" style="--skill-pct: 80%;">
+                                        <span class="pixel-progress-segments"></span>
+                                    </div>
+                                </div>
+                                <div class="skill-capability-tags">
+                                    <span class="cap-tag">Relational Modeling</span>
+                                    <span class="cap-tag">Query Optimization</span>
+                                    <span class="cap-tag">Data Constraints</span>
+                                </div>
+                            </div>
+
+                            <!-- Power BI Analytics Skill Item: Represents business intelligence, interactive data visualization, and DAX calculations -->
+                            <div class="skill-meter-item" tabindex="0" data-skill="Power BI" data-desc="Builds interactive visual dashboards, data transformations, and business metric aggregations.">
+                                <div class="skill-meter-head">
+                                    <div class="skill-name-wrap">
+                                        <span class="skill-glyph glyph-pbi">&#9670;</span>
+                                        <span class="skill-name">Power BI &amp; Analytics</span>
+                                    </div>
+                                    <span class="skill-level-tag">LVL 82 [CERTIFIED]</span>
+                                </div>
+                                <div class="pixel-progress-bar" aria-label="Power BI and analytics proficiency 82 percent" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="pixel-progress-fill fill-pbi" style="--skill-pct: 82%;">
+                                        <span class="pixel-progress-segments"></span>
+                                    </div>
+                                </div>
+                                <div class="skill-capability-tags">
+                                    <span class="cap-tag">DAX Measures</span>
+                                    <span class="cap-tag">Interactive Dashboards</span>
+                                    <span class="cap-tag">Data Transformation</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- ===================================================== -->
+                    <!-- CARTRIDGE 04: EMBEDDED IoT & DEVELOPER TOOLS -->
+                    <!-- Represents physical computing, sensor integration, version control, and Generative AI workflows -->
+                    <!-- ===================================================== -->
+                    <article class="pixel-skill-cartridge" data-category="hardware">
+                        <div class="cartridge-header">
+                            <div class="cartridge-badge">ROM-04</div>
+                            <h3 class="cartridge-title">
+                                <span class="cartridge-icon">&#9881;</span> IoT &amp; Dev Tools
+                            </h3>
+                            <span class="cartridge-count">4 MODULES</span>
+                        </div>
+                        <p class="cartridge-summary">Bridging physical microcontrollers with cloud intelligence, telemetry protocols, and Git workflows.</p>
+
+                        <div class="skills-meter-list">
+                            <!-- Arduino UNO Skill Item: Represents microcontroller prototyping, GPIO pin interfacing, and embedded circuit debug -->
+                            <div class="skill-meter-item" tabindex="0" data-skill="Arduino UNO" data-desc="Prototyped embedded hardware circuits, analog/digital sensor readings, and real-time controller triggers.">
+                                <div class="skill-meter-head">
+                                    <div class="skill-name-wrap">
+                                        <span class="skill-glyph glyph-ard">&#9670;</span>
+                                        <span class="skill-name">Arduino UNO &amp; IoT</span>
+                                    </div>
+                                    <span class="skill-level-tag">LVL 88 [EXPERIENCED]</span>
+                                </div>
+                                <div class="pixel-progress-bar" aria-label="Arduino and IoT proficiency 88 percent" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="pixel-progress-fill fill-ard" style="--skill-pct: 88%;">
+                                        <span class="pixel-progress-segments"></span>
+                                    </div>
+                                </div>
+                                <div class="skill-capability-tags">
+                                    <span class="cap-tag">Sensor Interfacing</span>
+                                    <span class="cap-tag">GPIO &amp; Circuit Wiring</span>
+                                    <span class="cap-tag">Hardware Prototyping</span>
+                                </div>
+                            </div>
+
+                            <!-- GPS & GSM Telemetry Skill Item: Represents satellite coordinate parsing, NMEA protocols, and cellular SMS communication -->
+                            <div class="skill-meter-item" tabindex="0" data-skill="GPS & GSM Telemetry" data-desc="Interfaced GPS modules for real-time SOS coordinate telemetry and GSM modules for emergency SMS transmission.">
+                                <div class="skill-meter-head">
+                                    <div class="skill-name-wrap">
+                                        <span class="skill-glyph glyph-gsm">&#9670;</span>
+                                        <span class="skill-name">GPS &amp; GSM Telemetry</span>
+                                    </div>
+                                    <span class="skill-level-tag">LVL 85 [APPLIED]</span>
+                                </div>
+                                <div class="pixel-progress-bar" aria-label="GPS and GSM telemetry proficiency 85 percent" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="pixel-progress-fill fill-gsm" style="--skill-pct: 85%;">
+                                        <span class="pixel-progress-segments"></span>
+                                    </div>
+                                </div>
+                                <div class="skill-capability-tags">
+                                    <span class="cap-tag">NMEA Geolocation</span>
+                                    <span class="cap-tag">AT Command Protocols</span>
+                                    <span class="cap-tag">Emergency Dispatch</span>
+                                </div>
+                            </div>
+
+                            <!-- Git & GitHub Skill Item: Represents distributed version control, commit conventions, and repository branch workflows -->
+                            <div class="skill-meter-item" tabindex="0" data-skill="Git & GitHub" data-desc="Maintains clean commit histories, feature branches, pull request reviews, and remote repository syncing.">
+                                <div class="skill-meter-head">
+                                    <div class="skill-name-wrap">
+                                        <span class="skill-glyph glyph-git">&#9670;</span>
+                                        <span class="skill-name">Git &amp; GitHub</span>
+                                    </div>
+                                    <span class="skill-level-tag">LVL 85 [PROFICIENT]</span>
+                                </div>
+                                <div class="pixel-progress-bar" aria-label="Git and GitHub proficiency 85 percent" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="pixel-progress-fill fill-git" style="--skill-pct: 85%;">
+                                        <span class="pixel-progress-segments"></span>
+                                    </div>
+                                </div>
+                                <div class="skill-capability-tags">
+                                    <span class="cap-tag">Branching Strategy</span>
+                                    <span class="cap-tag">Version Control</span>
+                                    <span class="cap-tag">Open Source Workflow</span>
+                                </div>
+                            </div>
+
+                            <!-- Generative AI Skill Item: Represents modern LLM concepts, prompt engineering, agentic systems, and AI workflows -->
+                            <div class="skill-meter-item" tabindex="0" data-skill="Generative AI" data-desc="Completed foundational coursework in LLM architecture, prompt engineering, and modern AI application workflows.">
+                                <div class="skill-meter-head">
+                                    <div class="skill-name-wrap">
+                                        <span class="skill-glyph glyph-ai">&#9670;</span>
+                                        <span class="skill-name">Generative AI</span>
+                                    </div>
+                                    <span class="skill-level-tag">LVL 82 [CERTIFIED]</span>
+                                </div>
+                                <div class="pixel-progress-bar" aria-label="Generative AI proficiency 82 percent" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="pixel-progress-fill fill-ai" style="--skill-pct: 82%;">
+                                        <span class="pixel-progress-segments"></span>
+                                    </div>
+                                </div>
+                                <div class="skill-capability-tags">
+                                    <span class="cap-tag">LLM Fundamentals</span>
+                                    <span class="cap-tag">Prompt Engineering</span>
+                                    <span class="cap-tag">AI-Augmented Dev</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Interactive Skill Inspector HUD Console -->
+                <div class="pixel-skill-inspector" id="skill-inspector" aria-live="polite">
+                    <div class="inspector-header">
+                        <span class="inspector-badge">&#9679; ARSENAL HUD INSPECTOR</span>
+                        <span class="inspector-help">[HOVER OR TAP ANY SKILL FOR CAPABILITY DETAILS]</span>
+                    </div>
+                    <div class="inspector-body">
+                        <span class="inspector-prompt">&gt;</span>
+                        <span class="inspector-text" id="inspector-text">SYSTEM READY: Select or hover over any technical skill above to inspect implementation details, architectural applications, and proficiency metrics.</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- PIXEL ART TIMELINE SECTION — QUEST LOG / CHRONOLOGY -->
+        <!-- Lists educational milestones, projects, and certifications -->
+        <!-- ===================================================== -->
+        <section class="section timeline-section pixel-timeline-section" id="timeline">
+            <div class="container">
+                <header class="section-header">
+                    <span class="section-tag">// 03. QUEST LOG</span>
+                    <h2 class="section-title">Experience &amp; Education</h2>
+                    <p class="section-description">A chronological log of academic milestones, hardware projects, certifications, and career objectives.</p>
+                </header>
+
+                <!-- Pixel Quest Log Timeline Container -->
+                <div class="pixel-timeline-container">
+                    <!-- Vertical Spine: The main timeline track -->
+                    <div class="pixel-timeline-spine" aria-hidden="true">
+                        <!-- Animated running pulse dot on the spine -->
+                        <div class="pixel-spine-pulse"></div>
+                    </div>
+
+                    <!-- ============================================= -->
+                    <!-- QUEST 01 — B.E. Computer Science & Data Science -->
+                    <!-- Represents academic foundation and core degree -->
+                    <!-- ============================================= -->
+                    <article class="pixel-timeline-item" data-era="education" id="timeline-education">
+                        <!-- Diamond Node on the spine -->
+                        <div class="pixel-timeline-node">
+                            <span class="pixel-node-inner"></span>
+                        </div>
+
+                        <!-- Era Label floating beside the spine -->
+                        <div class="pixel-era-tag era-education" aria-label="Education milestone">
+                            <span class="era-icon">&#127979;</span> EDUCATION
+                        </div>
+
+                        <!-- Milestone Card -->
+                        <div class="pixel-milestone-card">
+                            <!-- Card Header / Titlebar -->
+                            <div class="milestone-card-titlebar">
+                                <span class="milestone-rom-tag">LOG-01</span>
+                                <span class="milestone-date-tag">
+                                    <span class="date-pixel-icon">&#9201;</span>
+                                    2025 &ndash; 2029
+                                </span>
+                            </div>
+
+                            <!-- Main Content -->
+                            <div class="milestone-body">
+                                <h3 class="milestone-title">B.E. Computer Science &amp; Data Science</h3>
+                                <p class="milestone-org">
+                                    <span class="org-icon">&#9670;</span>
+                                    Adichunchanagiri Institute of Technology
+                                </p>
+                                <p class="milestone-location">&#128205; Chikkamagaluru, Karnataka, India</p>
+                                <p class="milestone-description">
+                                    Building a rigorous foundation in algorithms, systems engineering, data science, and modern software architecture. Active in engineering design labs, seminars, and applied IoT research.
+                                </p>
+
+                                <!-- Achievement Chips -->
+                                <div class="milestone-tags">
+                                    <span class="milestone-chip chip-highlight">CGPA: 8.3</span>
+                                    <span class="milestone-chip">Algorithms</span>
+                                    <span class="milestone-chip">Systems Engineering</span>
+                                    <span class="milestone-chip">Data Science</span>
+                                    <span class="milestone-chip">IoT Labs</span>
+                                </div>
+                            </div>
+
+                            <!-- XP Reward Bar -->
+                            <div class="milestone-xp-row">
+                                <span class="xp-label">XP EARNED</span>
+                                <div class="xp-bar-track">
+                                    <div class="xp-bar-fill" style="--xp-pct: 83%;"></div>
+                                </div>
+                                <span class="xp-value">8.3 / 10.0</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- ============================================= -->
+                    <!-- QUEST 02 — IoT Women Safety Hardware Device -->
+                    <!-- Represents embedded hardware prototyping milestone -->
+                    <!-- ============================================= -->
+                    <article class="pixel-timeline-item item-right" data-era="project" id="timeline-iot-project">
+                        <div class="pixel-timeline-node">
+                            <span class="pixel-node-inner node-project"></span>
+                        </div>
+
+                        <div class="pixel-era-tag era-project" aria-label="Project milestone">
+                            <span class="era-icon">&#9881;</span> PROJECT
+                        </div>
+
+                        <div class="pixel-milestone-card">
+                            <div class="milestone-card-titlebar">
+                                <span class="milestone-rom-tag">LOG-02</span>
+                                <span class="milestone-date-tag">
+                                    <span class="date-pixel-icon">&#9201;</span>
+                                    Semester 2 &bull; 2026
+                                </span>
+                            </div>
+
+                            <div class="milestone-body">
+                                <h3 class="milestone-title">Women Safety Device — IoT Hardware Prototype</h3>
+                                <p class="milestone-org">
+                                    <span class="org-icon">&#9670;</span>
+                                    Engineering Design &amp; Innovation Lab, AIT
+                                </p>
+                                <p class="milestone-description">
+                                    Engineered a real-time emergency safety device integrating Arduino UNO microcontroller, GPS geolocation parsing (NMEA protocol), and GSM cellular SMS alerts. Full end-to-end hardware prototyping, sensor wiring, firmware coding, and field testing.
+                                </p>
+
+                                <div class="milestone-tags">
+                                    <span class="milestone-chip chip-highlight">Featured Project</span>
+                                    <span class="milestone-chip">Arduino UNO</span>
+                                    <span class="milestone-chip">GPS Module</span>
+                                    <span class="milestone-chip">GSM SIM800L</span>
+                                    <span class="milestone-chip">C / C++</span>
+                                    <span class="milestone-chip">Embedded Systems</span>
+                                </div>
+                            </div>
+
+                            <div class="milestone-xp-row">
+                                <span class="xp-label">XP EARNED</span>
+                                <div class="xp-bar-track">
+                                    <div class="xp-bar-fill xp-green" style="--xp-pct: 88%;"></div>
+                                </div>
+                                <span class="xp-value">SHIPPED</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- ============================================= -->
+                    <!-- QUEST 03 — Power Generation through Water Research -->
+                    <!-- Represents energy systems academic project -->
+                    <!-- ============================================= -->
+                    <article class="pixel-timeline-item" data-era="project" id="timeline-power-project">
+                        <div class="pixel-timeline-node">
+                            <span class="pixel-node-inner node-project"></span>
+                        </div>
+
+                        <div class="pixel-era-tag era-project" aria-label="Research project milestone">
+                            <span class="era-icon">&#9881;</span> PROJECT
+                        </div>
+
+                        <div class="pixel-milestone-card">
+                            <div class="milestone-card-titlebar">
+                                <span class="milestone-rom-tag">LOG-03</span>
+                                <span class="milestone-date-tag">
+                                    <span class="date-pixel-icon">&#9201;</span>
+                                    Semester 3 &bull; 2026
+                                </span>
+                            </div>
+
+                            <div class="milestone-body">
+                                <h3 class="milestone-title">Power Generation Through Water — Systems Research</h3>
+                                <p class="milestone-org">
+                                    <span class="org-icon">&#9670;</span>
+                                    Renewable Energy &amp; Systems Lab, AIT
+                                </p>
+                                <p class="milestone-description">
+                                    Researched and modeled mechanical-to-electrical energy conversion using water-flow turbine systems. Analyzed kinetic energy transfer efficiency, power output metrics, and viability as an off-grid renewable energy solution.
+                                </p>
+
+                                <div class="milestone-tags">
+                                    <span class="milestone-chip chip-highlight">Research</span>
+                                    <span class="milestone-chip">Renewable Energy</span>
+                                    <span class="milestone-chip">Mechanical Systems</span>
+                                    <span class="milestone-chip">Energy Analysis</span>
+                                </div>
+                            </div>
+
+                            <div class="milestone-xp-row">
+                                <span class="xp-label">XP EARNED</span>
+                                <div class="xp-bar-track">
+                                    <div class="xp-bar-fill xp-purple" style="--xp-pct: 78%;"></div>
+                                </div>
+                                <span class="xp-value">COMPLETED</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- ============================================= -->
+                    <!-- QUEST 04 — GenAI & Power BI Certifications -->
+                    <!-- Represents professional upskilling and certifications -->
+                    <!-- ============================================= -->
+                    <article class="pixel-timeline-item item-right" data-era="certification" id="timeline-certifications">
+                        <div class="pixel-timeline-node">
+                            <span class="pixel-node-inner node-cert"></span>
+                        </div>
+
+                        <div class="pixel-era-tag era-certification" aria-label="Certification milestone">
+                            <span class="era-icon">&#127942;</span> CERTIFIED
+                        </div>
+
+                        <div class="pixel-milestone-card">
+                            <div class="milestone-card-titlebar">
+                                <span class="milestone-rom-tag">LOG-04</span>
+                                <span class="milestone-date-tag">
+                                    <span class="date-pixel-icon">&#9201;</span>
+                                    2026 &bull; Recent
+                                </span>
+                            </div>
+
+                            <div class="milestone-body">
+                                <h3 class="milestone-title">Generative AI &amp; Power BI Professional Training</h3>
+                                <p class="milestone-org">
+                                    <span class="org-icon">&#9670;</span>
+                                    Online Learning &amp; Professional Development Platforms
+                                </p>
+                                <p class="milestone-description">
+                                    Completed structured coursework covering foundational Large Language Model (LLM) concepts, prompt engineering techniques, and agentic AI workflows. Additionally completed Power BI data transformation, DAX formula writing, and interactive dashboard design certifications.
+                                </p>
+
+                                <div class="milestone-tags">
+                                    <span class="milestone-chip chip-highlight">Certified</span>
+                                    <span class="milestone-chip">Generative AI</span>
+                                    <span class="milestone-chip">Power BI</span>
+                                    <span class="milestone-chip">Prompt Engineering</span>
+                                    <span class="milestone-chip">DAX</span>
+                                    <span class="milestone-chip">LLM Fundamentals</span>
+                                </div>
+                            </div>
+
+                            <div class="milestone-xp-row">
+                                <span class="xp-label">XP EARNED</span>
+                                <div class="xp-bar-track">
+                                    <div class="xp-bar-fill xp-yellow" style="--xp-pct: 82%;"></div>
+                                </div>
+                                <span class="xp-value">CERTIFIED</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- ============================================= -->
+                    <!-- QUEST 05 — Seeking Engineer Role (Active) -->
+                    <!-- Represents current state and future career objectives -->
+                    <!-- ============================================= -->
+                    <article class="pixel-timeline-item" data-era="career" id="timeline-career">
+                        <div class="pixel-timeline-node node-active">
+                            <span class="pixel-node-inner node-career"></span>
+                            <span class="pixel-node-pulse" aria-hidden="true"></span>
+                        </div>
+
+                        <div class="pixel-era-tag era-career" aria-label="Current career status">
+                            <span class="era-icon">&#9651;</span> ACTIVE
+                        </div>
+
+                        <div class="pixel-milestone-card card-active">
+                            <div class="milestone-card-titlebar">
+                                <span class="milestone-rom-tag">LOG-05</span>
+                                <span class="milestone-date-tag date-blink">
+                                    <span class="date-pixel-icon">&#9679;</span>
+                                    PRESENT / ONGOING
+                                </span>
+                            </div>
+
+                            <div class="milestone-body">
+                                <h3 class="milestone-title">Aspiring Software Engineer &amp; Open-Source Contributor</h3>
+                                <p class="milestone-org">
+                                    <span class="org-icon">&#9670;</span>
+                                    Open to Internships &amp; Engineering Collaborations
+                                </p>
+                                <p class="milestone-description">
+                                    Actively seeking software engineering internship roles to apply systems programming, full-stack web, and data science skills within professional engineering teams. Building open-source contributions and improving algorithmic depth through competitive programming.
+                                </p>
+
+                                <div class="milestone-tags">
+                                    <span class="milestone-chip chip-active">OPEN TO WORK</span>
+                                    <span class="milestone-chip">Full-Stack Dev</span>
+                                    <span class="milestone-chip">Systems Engineering</span>
+                                    <span class="milestone-chip">DSA Practice</span>
+                                    <span class="milestone-chip">Open Source</span>
+                                </div>
+                            </div>
+
+                            <div class="milestone-xp-row">
+                                <span class="xp-label">STATUS</span>
+                                <div class="xp-bar-track">
+                                    <div class="xp-bar-fill xp-cyan" style="--xp-pct: 100%; animation: xp-pulse 2s infinite;"></div>
+                                </div>
+                                <span class="xp-value blink-text">LEVELING UP</span>
+                            </div>
+                        </div>
+                    </article>
+
+                </div><!-- /pixel-timeline-container -->
+            </div>
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- PROJECTS SECTION — PIXEL ARCADE GAME CARTRIDGE SHELF -->
+        <!-- ===================================================== -->
+        <!-- 
+            PROJECTS SECTION:
+            - Showcase of software engineering and hardware projects
+            - Interactive cards with preview image/mockup, description, tech stack tags, and links
+        -->
+        <section class="section projects-section" id="projects">
+            <div class="container">
+                <header class="section-header">
+                    <span class="section-tag">// 04. FEATURED WORK</span>
+                    <h2 class="section-title">Projects</h2>
+                    <p class="section-description">A curated selection of technical solutions and systems I have engineered.</p>
+                </header>
+
+                <div class="projects-grid">
+                    <!-- Project Card 1 -->
+                    <article class="project-card" id="project-women-safety">
+                        <div class="project-visual-placeholder">
+                            <div class="project-tag-floating">IoT &bull; Embedded</div>
+                            <div class="project-preview-mockup">
+                                <span class="mockup-icon">&#9881;</span>
+                                <span class="mockup-text">Hardware Prototype</span>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <div class="project-meta">
+                                <span class="project-semester">2nd Semester Project</span>
+                            </div>
+                            <h3 class="project-title">Women Safety Device using GPS &amp; GSM</h3>
+                            <p class="project-summary">
+                                Developed a portable personal safety device designed for rapid emergency response. Interfaced GPS module to track real-time coordinates and GSM module to alert pre-set contacts instantly.
+                            </p>
+                            <ul class="project-tech-stack">
+                                <li>Arduino UNO</li>
+                                <li>GPS Module</li>
+                                <li>GSM Module</li>
+                                <li>C / Embedded C</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn-link" aria-label="View source code on GitHub">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                    Source Code
+                                </a>
+                                <a href="#" class="btn-link" aria-label="View project documentation">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                    Case Study
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project Card 2 -->
+                    <article class="project-card" id="project-hydro-power">
+                        <div class="project-visual-placeholder">
+                            <div class="project-tag-floating">Renewable Energy &bull; Systems</div>
+                            <div class="project-preview-mockup">
+                                <span class="mockup-icon">&#9889;</span>
+                                <span class="mockup-text">System Design</span>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <div class="project-meta">
+                                <span class="project-semester">1st Semester Project</span>
+                            </div>
+                            <h3 class="project-title">Power Generation Through Water</h3>
+                            <p class="project-summary">
+                                Designed a scaled water-based kinetic energy generation mechanism. Formulated practical power distribution circuitry and analyzed mechanical-to-electrical energy conversion efficiency.
+                            </p>
+                            <ul class="project-tech-stack">
+                                <li>Electrical Circuitry</li>
+                                <li>Turbine Mechanics</li>
+                                <li>System Testing</li>
+                                <li>Data Analysis</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn-link" aria-label="View project details">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                    Project Specs
+                                </a>
+                                <a href="#" class="btn-link" aria-label="View demo or presentation">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                    Documentation
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project Card 3: Software / Web Project Placeholder -->
+                    <article class="project-card" id="project-portfolio-engine">
+                        <div class="project-visual-placeholder">
+                            <div class="project-tag-floating">Full-Stack &bull; Web</div>
+                            <div class="project-preview-mockup">
+                                <span class="mockup-icon">&#128187;</span>
+                                <span class="mockup-text">Web Application</span>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <div class="project-meta">
+                                <span class="project-semester">Featured Project</span>
+                            </div>
+                            <h3 class="project-title">Software Developer Portfolio &amp; Theme Engine</h3>
+                            <p class="project-summary">
+                                Built a semantic, accessible personal portfolio website equipped with a customizable night mode theme switcher, mobile-responsive layout, and high-performance CSS styling.
+                            </p>
+                            <ul class="project-tech-stack">
+                                <li>HTML5 Semantic</li>
+                                <li>CSS3 Grid &amp; Flexbox</li>
+                                <li>Vanilla JavaScript</li>
+                                <li>Accessible UX</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn-link" aria-label="View repository">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                    Repository
+                                </a>
+                                <a href="#hero" class="btn-link" aria-label="View live demo">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                    Live Preview
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- ACHIEVEMENTS & CERTIFICATIONS SECTION PLACEHOLDER -->
+        <!-- ===================================================== -->
+        <!-- 
+            ACHIEVEMENTS SECTION:
+            - Honors, certifications, awards, courses, and notable milestones
+        -->
+        <section class="section achievements-section" id="achievements">
+            <div class="container">
+                <header class="section-header">
+                    <span class="section-tag">// 05. CREDENTIALS</span>
+                    <h2 class="section-title">Certifications &amp; Achievements</h2>
+                    <p class="section-description">Formal recognitions and continuous professional learning achievements.</p>
+                </header>
+
+                <div class="achievements-grid">
+                    <article class="achievement-card">
+                        <div class="achievement-badge-icon">&#127891;</div>
+                        <div class="achievement-info">
+                            <h3 class="achievement-title">Introduction to Generative AI</h3>
+                            <p class="achievement-issuer">Completed Professional Course</p>
+                            <p class="achievement-desc">Studied foundational LLM principles, prompt design, and practical AI application development workflows.</p>
+                        </div>
+                    </article>
+
+                    <article class="achievement-card">
+                        <div class="achievement-badge-icon">&#128202;</div>
+                        <div class="achievement-info">
+                            <h3 class="achievement-title">Power BI for Beginners</h3>
+                            <p class="achievement-issuer">Completed Professional Course</p>
+                            <p class="achievement-desc">Acquired hands-on data modeling, DAX fundamentals, and interactive visual reporting techniques.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- CHAT SECTION (Interactive Pixel Terminal & Dispatch) -->
+        <!-- ===================================================== -->
+        <section class="section chat-section pixel-chat-section" id="chat">
+            <div class="container">
+                <header class="section-header">
+                    <span class="section-tag">// 06. INTERACTIVE TERMINAL</span>
+                    <h2 class="section-title">Developer Chat</h2>
+                    <p class="section-description">Send an instant dispatch or interact with the terminal bot to query skills, projects, and contact info.</p>
+                </header>
+
+                <div class="pixel-chat-terminal">
+                    <!-- Terminal Title Bar -->
+                    <div class="pixel-terminal-header">
+                        <div class="pixel-terminal-dots">
+                            <span class="pixel-dot dot-red"></span>
+                            <span class="pixel-dot dot-yellow"></span>
+                            <span class="pixel-dot dot-green"></span>
+                        </div>
+                        <span class="pixel-terminal-title">TERMINAL://CHAT_SESSION_v1.0</span>
+                        <span class="pixel-terminal-status">&#9679; LINK ACTIVE</span>
+                    </div>
+
+                    <!-- Terminal Log Messages Window -->
+                    <div class="pixel-terminal-window" id="chat-messages" role="log" aria-live="polite">
+                        <div class="terminal-msg bot-msg">
+                            <span class="msg-speaker">[MEENAKSHI_BOT]:</span>
+                            <span class="msg-text">Greetings traveler! Welcome to the live chat terminal. You can test prompt chips below or type an inquiry.</span>
+                        </div>
+                        <div class="terminal-msg system-msg">
+                            <span class="msg-speaker">[SYSTEM]:</span>
+                            <span class="msg-text">Ready. Available commands: 'projects', 'skills', 'status', 'clear', or custom message.</span>
+                        </div>
+                    </div>
+
+                    <!-- Quick Prompt Chips -->
+                    <div class="pixel-quick-prompts">
+                        <button type="button" class="pixel-prompt-chip" data-prompt="What projects are you most proud of?">
+                            &#9654; Best Projects?
+                        </button>
+                        <button type="button" class="pixel-prompt-chip" data-prompt="What is your primary tech stack?">
+                            &#9654; Tech Stack?
+                        </button>
+                        <button type="button" class="pixel-prompt-chip" data-prompt="Are you open to software internships?">
+                            &#9654; Open for Internships?
+                        </button>
+                        <button type="button" class="pixel-prompt-chip" data-prompt="How can I contact you directly?">
+                            &#9654; Contact Info?
+                        </button>
+                    </div>
+
+                    <!-- Chat Input Form -->
+                    <form class="pixel-chat-form" id="chat-form">
+                        <span class="terminal-input-prompt">&gt;</span>
+                        <input type="text" id="chat-input" class="pixel-chat-input" placeholder="Type a message or command (e.g. 'skills', 'projects')..." autocomplete="off" required aria-label="Type your chat message">
+                        <button type="submit" class="pixel-btn pixel-btn-primary pixel-chat-send-btn" id="chat-send-btn">
+                            SEND <span class="pixel-send-icon">&#9658;</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- CONTACT SECTION PLACEHOLDER -->
+        <!-- ===================================================== -->
+        <!-- 
+            CONTACT SECTION:
+            - Direct contact information (Email, LinkedIn, Phone, GitHub)
+            - Interactive contact form placeholder for inquiries and messages
+        -->
+        <section class="section contact-section" id="contact">
+            <div class="container">
+                <header class="section-header">
+                    <span class="section-tag">// 07. LET'S CONNECT</span>
+                    <h2 class="section-title">Get In Touch</h2>
+                    <p class="section-description">Have a question, collaboration idea, or an open software engineering opportunity? I'd love to hear from you!</p>
+                </header>
+
+                <div class="contact-wrapper">
+                    <!-- Contact Information Cards -->
+                    <div class="contact-details">
+                        <article class="contact-card">
+                            <div class="contact-card-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                            </div>
+                            <div class="contact-card-text">
+                                <span class="label">Email</span>
+                                <a href="mailto:example@domain.com" class="value">your.email@example.com</a>
+                            </div>
+                        </article>
+
+                        <article class="contact-card">
+                            <div class="contact-card-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                            </div>
+                            <div class="contact-card-text">
+                                <span class="label">LinkedIn</span>
+                                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="value">linkedin.com/in/your-profile</a>
+                            </div>
+                        </article>
+
+                        <article class="contact-card">
+                            <div class="contact-card-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                            </div>
+                            <div class="contact-card-text">
+                                <span class="label">GitHub</span>
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="value">github.com/your-username</a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Contact Form Placeholder -->
+                    <form class="contact-form" id="contact-form" action="#" method="POST" onsubmit="event.preventDefault(); alert('Message form submitted (placeholder)!');">
+                        <div class="form-group">
+                            <label for="contact-name">Your Name</label>
+                            <input type="text" id="contact-name" name="name" placeholder="Jane Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-email">Your Email</label>
+                            <input type="email" id="contact-email" name="email" placeholder="jane@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-subject">Subject</label>
+                            <input type="text" id="contact-subject" name="subject" placeholder="Project Inquiry / Job Opportunity" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-message">Message</label>
+                            <textarea id="contact-message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-submit" id="contact-submit-btn">
+                            Send Message
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ========================================================= -->
+    <!-- FOOTER -->
+    <!-- ========================================================= -->
+    <footer class="site-footer" id="footer">
+        <div class="container footer-container">
+            <div class="footer-left">
+                <a href="#hero" class="brand-logo footer-logo">
+                    <span class="logo-bracket">&lt;</span>
+                    <span class="logo-text">DevPortfolio</span>
+                    <span class="logo-bracket">/&gt;</span>
+                </a>
+                <p class="footer-copy">
+                    &copy; <span id="current-year">2026</span> Built with Semantic HTML, Modern CSS &amp; Clean JS.
+                </p>
+            </div>
+            <div class="footer-right">
+                <nav class="footer-nav" aria-label="Footer Quick Links">
+                    <ul class="footer-links">
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#timeline">Timeline</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#chat">Chat</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <a href="#header" class="back-to-top-btn" aria-label="Back to top" id="back-to-top">
+                    &uarr; Back to Top
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript File -->
+    <script src="script.js"></script>
+</body>
+</html>
